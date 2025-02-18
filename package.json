@@ -1,5 +1,30 @@
 {
+  "type": "module",
   "dependencies": {
-    "node": "^23.8.0"
-  }
+    "bootstrap": "^5.3.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "json": "^11.0.0",
+    "node": "^23.8.0",
+    "nodemon": "^3.1.9"
+  },
+  "name": "website_development",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodewithNishchal/Website_Development.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodewithNishchal/Website_Development/issues"
+  },
+  "homepage": "https://github.com/CodewithNishchal/Website_Development#readme"
 }
