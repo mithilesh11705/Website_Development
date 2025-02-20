@@ -174,11 +174,11 @@ div#carouselExampleAutoplaying {
 }
 
 .researchSlider i:first-child {
-    left: -22px;
+    left: -0px;
 }
 
 .researchSlider i:last-child {
-    right: -22px;
+    right: -15px;
 }
 
 .research>.researchSlider >.research_list {
@@ -187,13 +187,20 @@ div#carouselExampleAutoplaying {
     grid-auto-columns: calc(100% /3);
     list-style: none;
     gap: 3vw;
-    /* overflow: hidden; */
+    overflow: hidden;   
 }
 
 .research>.researchSlider>.research_list>li {
     height: 50vh;
     width: 25vw;
 }
+
+.research_list.dragging >li{
+    cursor: grab;
+    user-select: none;
+}
+
+
 
 
 /* Student and Faculty slots */
