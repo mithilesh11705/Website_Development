@@ -1,3 +1,8 @@
+body{
+    font-family: "Atma", serif;
+}
+
+
 div#backImage
 {
     position: relative;
@@ -30,7 +35,7 @@ div#college_name
     width: 85vw;
 }
 
-div#college_name .college_logo > img{
+div#college_name .college_logo > a>img{
     height: 9vh;
     width: 7vw;
     margin-right: 1.5vw;
