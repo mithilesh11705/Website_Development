@@ -1,45 +1,67 @@
 <footer>
-<link rel="stylesheet" href="css/footer.css">
+    <!-- Linking the Footer Stylesheet -->
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
     <div class="footer-container">
         <!-- College Logo -->
         <div class="footer-logo">
             <img src="/images/logo.png" alt="College Logo">
         </div>
 
-        <!-- Navigation Links -->
+        <!-- Explore Section -->
         <div class="footer-nav">
-            <h3>Navigation</h3>
+            <h3>Explore</h3>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/courses">Courses</a></li>
-                <li><a href="/admissions">Admissions</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="/calendar">Academic Calendar</a></li>
+                <li><a href="/fees">Online Fees Payment</a></li>
+                <li><a href="/reach">How to Reach</a></li>
+                <li><a href="/recruitment">Recruitment</a></li>
+                
+                <!-- Complaints (Dropdown) -->
+                <li class="dropdown">
+                    <a href="#">Complaints ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/complaints/networking">Networking Complaint</a></li>
+                        <li><a href="/complaints/scst">Grievance Committee SC/ST Cell</a></li>
+                        <li><a href="/complaints/anti-ragging">Anti-Ragging Committee</a></li>
+                        <li><a href="/complaints/internal">Internal Complaint Committee</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
         <!-- Reach Us -->
         <div class="footer-contact">
             <h3>Reach Us</h3>
-            <p>123 College Street, City, Country</p>
-            <p>Email: <a href="mailto:info@college.com">info@college.com</a></p>
-            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p>
+               Permanent Adress:
+               Survey N. 140,141/1 behind Br. Sheshrao Wankhade Shetkari 
+               Sahkari Soot Girni,
+               Village - Waranga, PO - Dongargaon(Butibori),
+               Tahsil- Nagpur (Rural), District Nagpur, Maharashtra-
+               441108
+            </p>
+            <p>Email: <a href="mailto:registrar@iiitn.ac.in">registrar@iiitn.ac.in</a></p>
+            <p>Phone: <a href="tel:+91 9405215010">+91 9405215010</a></p>
         </div>
 
         <!-- Social Media -->
         <div class="footer-social">
             <h3>Connect With Us</h3>
             <div class="social-icons">
-                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/IIITN_OFFICIAL" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/iiitnofficial/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/iiitnagpur/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCdABXietns2bXshI0nstH2A" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
     </div>
 
     <!-- Copyright Section -->
     <div class="footer-bottom">
-        <p>&copy; <%= new Date().getFullYear() %> Your College Name. All Rights Reserved.</p>
+        <p>&copy; <%= new Date().getFullYear() %> Indian Institute of Information Technology, Nagpur . All Rights Reserved.</p>
     </div>
+   <script src="/scripts/footer.js"></script>
 </footer>

@@ -17,27 +17,171 @@ footer {
 /* Logo */
 .footer-logo img {
     margin-right: 100px;
-    margin-left:0px;
-    margin-top:30px;
+    margin-left: 0px;
+    margin-top: 30px;
     width: 150px; /* Adjust as needed */
     height: auto;
 }
 
 /* Footer Sections */
-.footer-nav, .footer-contact, .footer-social {
+.footer-explore, .footer-contact, .footer-social {
     flex: 1;
     min-width: 250px;
     margin: 10px 0;
 }
 
+/* Explore Section */
+.footer-explore {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 /* Section Titles */
-.footer-nav h3, .footer-contact h3, .footer-social h3 {
+.footer-explore h3, .footer-contact h3, .footer-social h3 {
     color: #f8b400;
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
-/* Navigation Links */
+/* Explore Links */
+.footer-explore ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-explore ul li {
+    margin: 5px 0;
+}
+
+.footer-explore ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+    display: block;
+}
+
+.footer-explore ul li a:hover {
+    color: #f8b400;
+}
+
+/* Dropdown Menu for Complaints */
+.complaints-menu {
+    position: relative;
+}
+
+.complaints-menu > a {
+    display: inline-block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.complaints-dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #060049;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    min-width: 220px;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.complaints-menu:hover .complaints-dropdown {
+    display: block;
+}
+
+.complaints-dropdown a {
+    display: block;
+    color: #ddd;
+    padding: 8px 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.complaints-dropdown a:hover {
+    background-color: #f8b400;
+    color: #060049;
+}
+
+/* Contact Info */
+.footer-contact p {
+    font-size: 0.9rem;
+}
+
+.footer-contact a {
+    color: #f8b400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media */
+.footer-social {
+   margin-left: 100px;
+} 
+.footer-social .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+
+}
+
+.footer-social .social-icons a {
+    color: #ddd;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-social .social-icons a:hover {
+    color: #f8b400;
+    transform: scale(1.1);
+}
+
+/* Social Icon Styling */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social-icon i {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Bottom Copyright */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+/* Footer Navigation (Explore Section) */
+.footer-nav {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px 0;
+}
+
+.footer-nav h3 {
+    color: #f8b400;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
 .footer-nav ul {
     list-style: none;
     padding: 0;
@@ -57,42 +201,33 @@ footer {
     color: #f8b400;
 }
 
-/* Contact Info */
-.footer-contact p {
-    font-size: 0.9rem;
+/* Dropdown Styling */
+.footer-nav .dropdown {
+    position: relative;
 }
 
-.footer-contact a {
-    color: #f8b400;
-    text-decoration: none;
-    font-weight: bold;
+.footer-nav .dropdown-menu {
+    display: none;
+    position: relative;
+    background-color: #060049;
+    padding: 10px;
+    min-width: 110px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
-.footer-contact a:hover {
-    text-decoration: underline;
+.footer-nav .dropdown-menu.show {
+    display: block;
 }
-
-/* Social Media */
-.footer-social .social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.footer-social .social-icons a {
+.footer-nav .dropdown-menu li a {
+    display: block;
     color: #ddd;
-    font-size: 1.5rem;
-    transition: color 0.3s ease, transform 0.2s ease;
+    padding: 8px 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.footer-social .social-icons a:hover {
-    color: #f8b400;
-    transform: scale(1.1);
-}
-
-/* Bottom Copyright */
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #bbb;
+.footer-nav .dropdown-menu li a:hover {
+    background-color: #c39e385c;
+    color: #060049;
 }
