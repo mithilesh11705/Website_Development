@@ -1,0 +1,158 @@
+div#backImage
+{
+    position: relative;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    box-shadow:
+            0 -10px 10px -5px rgba(0, 0, 0, 0.5),
+            /* Top shadow */
+            0 10px 10px -5px rgba(0, 0, 0, 0.5);
+        /* Bottom shadow */
+}
+
+hr
+{
+    color: rgb(253, 92, 56);
+}
+
+
+div#college_name
+{
+    position: absolute;
+    top: 1vh;
+    left: 50;
+    z-index: 12;
+    /* height: 8vh; */
+    width: 90vw;
+}
+
+div#college_name .college_logo > img{
+    height: 10vh;
+    width: 10vw;
+    margin-right: 1vw;
+    float: left;
+}
+
+div#siteHead {
+    height: 7vh;
+    width: 90vw;
+    margin-top: 2.5vh;
+    float: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(28, 121, 218);
+        background: linear-gradient(277deg, rgba(28, 121, 218, 0.7170517865349264) 0%, rgba(136, 194, 240, 0.8094887613248425) 46%, rgba(72, 164, 250, 0.7366596296721813) 100%);
+}
+
+div#siteHead>img {
+    height: 5vh;
+    width: 3vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+div#siteHead > a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+}
+
+
+
+/* Set the width and height of the carousel */
+div#carouselExampleAutoplaying {
+    width: 100vw;
+    /* Full viewport width */
+    height: 100vh;
+    /* 100% of viewport height */
+}
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: rgba(0, 0, 0, 0.248);
+    /* Change background color */
+    border-radius: 50%;
+    /* Make it circular */
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: brightness(1.5);
+    /* Make it brighter */
+}
+
+.carousel-inner img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    /* Ensures the image covers the carousel area */
+}
+
+
+
+
+
+
+
+
+/* Get the news and Updates */
+#News_area
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+}
+
+#News_area > .update {
+    margin: 2vw;
+    width: 60vw;
+    height: 90%;
+    border: solid black 2px;
+}
+
+#News_area > .conferences {
+    margin: 2vw;
+    width: 20vw;
+    height: 90%;
+    border: solid black 2px;
+}
+
+
+
+
+.research {
+    padding: 100px;
+    
+}
+
+
+
+#students_faculty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+}
+
+#students_faculty>.students {
+    margin: 2vw;
+    width: 40vw;
+    height: 90%;
+    border: solid black 2px;
+}
+
+#students_faculty>.faculty {
+    margin: 2vw;
+    width: 40vw;
+    height: 90%;
+    border: solid black 2px;
+}
