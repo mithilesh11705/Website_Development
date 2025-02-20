@@ -1,5 +1,7 @@
 body{
     font-family: "Atma", serif;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 
@@ -36,16 +38,28 @@ div#college_name
 }
 
 div#college_name .college_logo > a>img{
-    height: 9vh;
+    height: 10vh;
     width: 7vw;
-    margin-right: 1.5vw;
+    margin-right: 1.25vw;
     float: left;
 }
 
+div.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.5vh;
+}
+
+
+
+
+
+/* Header for the file */
 div#siteHead {
     height: 7vh;
     width: 85vw;
-    margin-top: 2.5vh;
+    margin-top: 1.5vh;
     float: none;
     display: flex;
     justify-content: space-around;
@@ -132,14 +146,57 @@ div#carouselExampleAutoplaying {
 
 
 
-
+/* Reasearch and Development slider */
 .research {
-    padding: 100px;
-    
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+}
+
+.research > .researchSlider {
+    width: 90vw;
+    height: 50vh;
+    padding: 0px 1vw;
+    position: relative;
+}
+
+.researchSlider i {
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.75rem;
+    top: 50%;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.23);
+}
+
+.researchSlider i:first-child {
+    left: -22px;
+}
+
+.researchSlider i:last-child {
+    right: -22px;
+}
+
+.research>.researchSlider >.research_list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% /3);
+    list-style: none;
+    gap: 3vw;
+    /* overflow: hidden; */
+}
+
+.research>.researchSlider>.research_list>li {
+    height: 50vh;
+    width: 25vw;
 }
 
 
-
+/* Student and Faculty slots */
 #students_faculty {
     display: flex;
     justify-content: center;
