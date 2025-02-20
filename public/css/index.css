@@ -31,9 +31,9 @@ div#college_name
 }
 
 div#college_name .college_logo > img{
-    height: 10vh;
-    width: 10vw;
-    margin-right: 1vw;
+    height: 9vh;
+    width: 7vw;
+    margin-right: 1.5vw;
     float: left;
 }
 
@@ -49,7 +49,7 @@ div#siteHead {
         background: linear-gradient(277deg, rgba(28, 121, 218, 0.7170517865349264) 0%, rgba(136, 194, 240, 0.8094887613248425) 46%, rgba(72, 164, 250, 0.7366596296721813) 100%);
 }
 
-div#siteHead>img {
+div#siteHead>a>img {
     height: 5vh;
     width: 3vw;
     margin: 0px;
