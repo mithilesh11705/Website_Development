@@ -94,6 +94,13 @@ div#siteHead > a {
     font-size: 2.5vh;
 }
 
+div#siteHead>a.header_logo {
+    display: none;
+}
+
+div#siteHead>a>img.header_logo {
+    display: none;
+}
 
 div#site_head>a>img {
     height: 5vh;
