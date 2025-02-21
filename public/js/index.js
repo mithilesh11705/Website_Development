@@ -1,5 +1,3 @@
-// const { start } = require("repl");
-
 const wrapper = document.querySelector(".researchSlider");
 const carousel = document.querySelector(".research_list");
 const arrowBtn = document.querySelectorAll(".researchSlider > i");
@@ -49,7 +47,7 @@ const dragStop = () => {
 }
 
 const autoPlay = () => {
-    timeoutId = setTimeout(() => carousel.scrollLeft += cardWidth, 500);
+    timeoutId = setTimeout(() => carousel.scrollLeft += cardWidth, 1500);
 }
 autoPlay();
 
@@ -67,8 +65,9 @@ const infiniteScroll = () => {
         carousel.classList.remove("no-transition");
     }
 
+    //clear existing timeout and restart carousel if mouse is not hovering
     clearTimeout(timeoutId);
-
+    if(!wrapper.matches(":hover")) autoPlay();
 }
 
 carousel.addEventListener("mousedown", dragStart);

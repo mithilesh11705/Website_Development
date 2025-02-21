@@ -146,6 +146,9 @@ div#carouselExampleAutoplaying {
 
 
 
+
+
+
 /* Reasearch and Development slider */
 .research {
     padding-left: 2.5vw;
@@ -219,6 +222,10 @@ div#carouselExampleAutoplaying {
 .research_list>li {
     scroll-snap-align: start;
 }
+
+
+
+
 
 
 
