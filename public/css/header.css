@@ -1,0 +1,103 @@
+
+
+/* Header for the file */
+div#college_name {
+    position: absolute;
+    top: 1vh;
+    left: 7.25vw;
+    z-index: 12;
+    /* height: 8vh; */
+    width: 85vw;
+}
+
+div#college_name .college_logo>a>img {
+    height: 10vh;
+    width: 7vw;
+    margin-right: 1.25vw;
+    float: left;
+}
+
+div.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.5vh;
+}
+
+div#siteHead {
+    height: 6vh;
+    width: 85vw;
+    /* left: 50; */
+    margin-top: 1.5vh;
+    float: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(28, 121, 218);
+    background: linear-gradient(277deg, rgba(28, 121, 218, 0.7170517865349264) 0%, rgba(136, 194, 240, 0.8094887613248425) 46%, rgba(72, 164, 250, 0.7366596296721813) 100%);
+}
+
+div#site_head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 9vh;
+    width: 100vw;
+    float: none;
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#siteHead>a>img {
+    height: 5vh;
+    width: 3vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+div#siteHead>a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+}
+
+div#siteHead>a.header_logo {
+    display: none;
+}
+
+div#siteHead>a>img.header_logo {
+    display: none;
+}
+
+div#site_head>a>img {
+    height: 5vh;
+    width: 3vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+div#site_head>a {
+    margin: 0px 1.5vw;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.683);
+    font-size: 2.5vh;
+}
+
+div#site_head>a.header_logo {
+    height: 12vh;
+    width: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: aliceblue;
+}
+
+div#site_head>a>img.header_logo {
+    height: 8vh;
+    width: 4vw;
+}
