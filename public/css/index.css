@@ -186,8 +186,15 @@ div#carouselExampleAutoplaying {
     grid-auto-flow: column;
     grid-auto-columns: calc(100% /3);
     list-style: none;
-    gap: 3vw;
-    overflow: hidden;   
+    gap: 1.5vw;
+    overflow-x: auto;   
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.researchSlider::-webkit-scrollbar {
+    display: none;
 }
 
 .research>.researchSlider>.research_list>li {
@@ -195,11 +202,23 @@ div#carouselExampleAutoplaying {
     width: 25vw;
 }
 
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.research_list.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
 .research_list.dragging >li{
     cursor: grab;
     user-select: none;
 }
 
+.research_list>li {
+    scroll-snap-align: start;
+}
 
 
 
