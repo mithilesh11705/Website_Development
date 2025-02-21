@@ -1,299 +1,553 @@
-body{
-    font-family: "Atma", serif;
-    min-height: 100vh;
-    min-width: 100vw;
+body {
+  font-family: "Atma", serif;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
+div#backImage {
+  position: relative;
+  height: 100vh;
 
-div#backImage
-{
-    position: relative;
-    height: 100vh;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    box-shadow:
-            0 -10px 10px -5px rgba(0, 0, 0, 0.5),
-            /* Top shadow */
-            0 10px 10px -5px rgba(0, 0, 0, 0.5);
-        /* Bottom shadow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 -10px 10px -5px rgba(0, 0, 0, 0.5),
+    /* Top shadow */ 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+  /* Bottom shadow */
 }
 
-hr
-{
-    color: rgb(253, 92, 56);
+hr {
+  color: rgb(253, 92, 56);
 }
 
-
-div#college_name
-{
-    position: absolute;
-    top: 1vh;
-    left: 50;
-    z-index: 12;
-    /* height: 8vh; */
-    width: 85vw;
+div#college_name {
+  position: absolute;
+  top: 1vh;
+  left: 50;
+  z-index: 12;
+  /* height: 8vh; */
+  width: 85vw;
 }
 
-div#college_name .college_logo > a>img{
-    height: 10vh;
-    width: 7vw;
-    margin-right: 1.25vw;
-    float: left;
+div#college_name .college_logo > a > img {
+  height: 10vh;
+  width: 7vw;
+  margin-right: 1.25vw;
+  float: left;
 }
 
 div.title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 1.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.5vh;
 }
-
-
-
-
 
 /* Header for the file */
 div#siteHead {
-    height: 6vh;
-    width: 85vw;
-    margin-top: 1.5vh;
-    float: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: rgb(28, 121, 218);
-        background: linear-gradient(277deg, rgba(28, 121, 218, 0.7170517865349264) 0%, rgba(136, 194, 240, 0.8094887613248425) 46%, rgba(72, 164, 250, 0.7366596296721813) 100%);
+  height: 6vh;
+  width: 85vw;
+  margin-top: 1.5vh;
+  float: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(28, 121, 218);
+  background: linear-gradient(
+    277deg,
+    rgba(28, 121, 218, 0.7170517865349264) 0%,
+    rgba(136, 194, 240, 0.8094887613248425) 46%,
+    rgba(72, 164, 250, 0.7366596296721813) 100%
+  );
 }
 
 div#site_head {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 9vh;
-    width: 100vw;
-    float: none;
-    background-color: darkorange;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 9vh;
+  width: 100vw;
+  float: none;
+  background-color: darkorange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-div#siteHead>a>img {
-    height: 5vh;
-    width: 3vw;
-    margin: 0px;
-    padding: 0px;
+div#siteHead > a > img {
+  height: 5vh;
+  width: 3vw;
+  margin: 0px;
+  padding: 0px;
 }
 
 div#siteHead > a {
-    text-decoration: none;
-    color: white;
-    font-size: 2.5vh;
+  text-decoration: none;
+  color: white;
+  font-size: 2.5vh;
 }
 
-
-div#site_head>a>img {
-    height: 5vh;
-    width: 3vw;
-    margin: 0px;
-    padding: 0px;
+div#site_head > a > img {
+  height: 5vh;
+  width: 3vw;
+  margin: 0px;
+  padding: 0px;
 }
 
 div#site_head > a {
-    margin: 0px 1.5vw;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.683);
-    font-size: 2.5vh;
+  margin: 0px 1.5vw;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.683);
+  font-size: 2.5vh;
 }
 
-div#site_head>a.header_logo {
-    height: 12vh;
-    width: 6vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-    background-color: aliceblue;
+div#site_head > a.header_logo {
+  height: 12vh;
+  width: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  background-color: aliceblue;
 }
 
-div#site_head>a>img.header_logo {
-    height: 8vh;
-    width: 4vw;
+div#site_head > a > img.header_logo {
+  height: 8vh;
+  width: 4vw;
 }
-
 
 /* Set the width and height of the carousel */
 div#carouselExampleAutoplaying {
-    width: 100vw;
-    /* Full viewport width */
-    height: 100vh;
-    /* 100% of viewport height */
+  width: 100vw;
+  /* Full viewport width */
+  height: 100vh;
+  /* 100% of viewport height */
 }
-
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-    background-color: rgba(0, 0, 0, 0.248);
-    /* Change background color */
-    border-radius: 50%;
-    /* Make it circular */
+  background-color: rgba(0, 0, 0, 0.248);
+  /* Change background color */
+  border-radius: 50%;
+  /* Make it circular */
 }
 
 .carousel-control-next,
 .carousel-control-prev {
-    filter: brightness(1.5);
-    /* Make it brighter */
+  filter: brightness(1.5);
+  /* Make it brighter */
 }
 
 .carousel-inner img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    /* Ensures the image covers the carousel area */
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  /* Ensures the image covers the carousel area */
 }
-
-
-
-
-
-
-
 
 /* Get the news and Updates */
-#News_area
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    width: 100vw;
+.container {
+  max-width: 1500px; /* Restored to 1200px to utilize more space */
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 2rem; /* Decent gap between items */
+  align-items: start; /* Align items to the top for consistency */
 }
 
-#News_area > .update {
-    margin: 2vw;
-    width: 60vw;
-    height: 90%;
-    border: solid black 2px;
+.section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#News_area > .conferences {
-    margin: 2vw;
-    width: 20vw;
-    height: 90%;
-    border: solid black 2px;
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #63a4ff; /* Light blue */
 }
 
+/* Events Section */
+.events-container {
+  position: relative;
+}
 
+.event-slider {
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  border-radius: 8px;
+}
 
+.event-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
 
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
 
+.event-content {
+  padding: 1rem 0;
+}
+
+.event-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+}
+
+.event-date {
+  color: #63a4ff; /* Light blue */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.event-description {
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.course-id {
+  font-size: 0.875rem;
+  color: #718096;
+  margin-bottom: 1rem;
+}
+
+/* Navigation */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.nav-btn {
+  background: #63a4ff; /* Light blue */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #4a90e2; /* Darker shade of light blue */
+  transform: translateY(-2px);
+}
+
+.nav-btn:active {
+  transform: translateY(0);
+}
+
+/* Awards Section */
+.awards-container {
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+.awards-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.awards-scroll {
+  position: absolute;
+  width: 100%;
+  animation: scrollUp 30s linear infinite; /* Slowed down to 30 seconds */
+}
+
+.award-card {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #63a4ff; /* Light blue */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.award-card:hover {
+  transform: translateX(5px);
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* Pause animation on hover */
+.awards-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Seminars Section */
+.seminar-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.profile-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.seminar-badge {
+  display: inline-block;
+  background: #63a4ff; /* Light blue */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.seminar-content {
+  padding: 1.5rem;
+}
+
+.seminar-topic {
+  color: #4a5568;
+  margin: 1rem 0;
+}
+
+.seminar-details {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.detail-item {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.label {
+  color: #718096;
+  font-weight: 500;
+  min-width: 100px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Loading State */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #63a4ff; /* Light blue */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error State */
+.error-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1000;
+}
+
+.error-message button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #63a4ff; /* Light blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+    padding: 1rem;
+  }
+
+  .event-card img {
+    height: 150px;
+  }
+
+  .awards-container {
+    height: 300px;
+  }
+
+  .nav-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
 
 /* Reasearch and Development slider */
 .research {
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-    background: rgb(28, 121, 218);
-        background: linear-gradient(277deg, rgba(28, 121, 218, 0.7170517865349264) 0%, rgba(136, 194, 240, 0.8094887613248425) 46%, rgba(72, 164, 250, 0.7366596296721813) 100%);
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  background: rgb(28, 121, 218);
+  background: linear-gradient(
+    277deg,
+    rgba(28, 121, 218, 0.7170517865349264) 0%,
+    rgba(136, 194, 240, 0.8094887613248425) 46%,
+    rgba(72, 164, 250, 0.7366596296721813) 100%
+  );
 }
 
 .research > .researchSlider {
-    width: 90vw;
-    height: 50vh;
-    padding: 0px 1vw;
-    position: relative;
+  width: 90vw;
+  height: 50vh;
+  padding: 0px 1vw;
+  position: relative;
 }
 
 .researchSlider i {
-    height: 50px;
-    width: 50px;
-    background: #fff;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    font-size: 1.75rem;
-    top: 50%;
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.23);
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.75rem;
+  top: 50%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .researchSlider i:first-child {
-    left: -0px;
+  left: -0px;
 }
 
 .researchSlider i:last-child {
-    right: -15px;
+  right: -15px;
 }
 
-.research>.researchSlider >.research_list {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc(100% /3);
-    list-style: none;
-    gap: 1.5vw;
-    overflow-x: auto;   
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
+.research > .researchSlider > .research_list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(100% / 3);
+  list-style: none;
+  gap: 1.5vw;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 .researchSlider::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-.research>.researchSlider>.research_list>li {
-    height: 50vh;
-    width: 25vw;
+.research > .researchSlider > .research_list > li {
+  height: 50vh;
+  width: 25vw;
 }
 
 .carousel.no-transition {
-    scroll-behavior: auto;
+  scroll-behavior: auto;
 }
 
 .research_list.dragging {
-    scroll-snap-type: none;
-    scroll-behavior: auto;
+  scroll-snap-type: none;
+  scroll-behavior: auto;
 }
 
-.research_list.dragging >li{
-    cursor: grab;
-    user-select: none;
+.research_list.dragging > li {
+  cursor: grab;
+  user-select: none;
 }
 
-.research_list>li {
-    scroll-snap-align: start;
+.research_list > li {
+  scroll-snap-align: start;
 }
-
-
-
-
-
-
 
 /* Student and Faculty slots */
 #students_faculty {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100vw;
 }
 
-#students_faculty>.students {
-    margin: 2vw;
-    width: 40vw;
-    height: 90%;
-    border: solid black 2px;
+#students_faculty > .students {
+  margin: 2vw;
+  width: 40vw;
+  height: 90%;
+  border: solid black 2px;
 }
 
-#students_faculty>.faculty {
-    margin: 2vw;
-    width: 40vw;
-    height: 90%;
-    border: solid black 2px;
+#students_faculty > .faculty {
+  margin: 2vw;
+  width: 40vw;
+  height: 90%;
+  border: solid black 2px;
 }
