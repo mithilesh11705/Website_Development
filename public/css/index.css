@@ -57,7 +57,7 @@ div.title {
 
 /* Header for the file */
 div#siteHead {
-    height: 7vh;
+    height: 6vh;
     width: 85vw;
     margin-top: 1.5vh;
     float: none;
@@ -66,6 +66,19 @@ div#siteHead {
     align-items: center;
     background: rgb(28, 121, 218);
         background: linear-gradient(277deg, rgba(28, 121, 218, 0.7170517865349264) 0%, rgba(136, 194, 240, 0.8094887613248425) 46%, rgba(72, 164, 250, 0.7366596296721813) 100%);
+}
+
+div#site_head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 9vh;
+    width: 100vw;
+    float: none;
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div#siteHead>a>img {
@@ -81,6 +94,37 @@ div#siteHead > a {
     font-size: 2.5vh;
 }
 
+
+div#site_head>a>img {
+    height: 5vh;
+    width: 3vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+div#site_head > a {
+    margin: 0px 1.5vw;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.683);
+    font-size: 2.5vh;
+}
+
+div#site_head>a.header_logo {
+    height: 12vh;
+    width: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: aliceblue;
+}
+
+div#site_head>a>img.header_logo {
+    height: 8vh;
+    width: 4vw;
+}
 
 
 /* Set the width and height of the carousel */
@@ -153,6 +197,8 @@ div#carouselExampleAutoplaying {
 .research {
     padding-left: 2.5vw;
     padding-right: 2.5vw;
+    background: rgb(28, 121, 218);
+        background: linear-gradient(277deg, rgba(28, 121, 218, 0.7170517865349264) 0%, rgba(136, 194, 240, 0.8094887613248425) 46%, rgba(72, 164, 250, 0.7366596296721813) 100%);
 }
 
 .research > .researchSlider {
