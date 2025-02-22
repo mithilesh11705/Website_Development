@@ -530,24 +530,244 @@ h2 {
 }
 
 /* Student and Faculty slots */
-#students_faculty {
+
+.notice-container {
+  max-width: auto;
+  margin: 20px auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #004d40;
+  padding:10px;
+}
+
+.notice-header {
+  padding: 20px;
+  background: #004d40;
+  border-bottom: 1px solid #00695c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notice-header h2 {
+  color: white;
+  font-size: 24px;
+}
+
+.all-notices-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.all-notices-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.notice-board {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.notice-wrapper {
+  position: absolute;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.notice-item {
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  background: white;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.notice-item:hover {
+  background: #e8f5e9;
+}
+
+.notice-title {
+  font-size: 16px;
+  color: #00695c;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.new-badge {
+  background: #004d40;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.notice-date {
+  color: #616161;
+  font-size: 14px;
+}
+
+.controls {
   display: flex;
   justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background: #e8f5e9;
+}
+
+.control-btn {
+  padding: 8px 20px;
+  border: 1px solid #004d40;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #004d40;
+  font-weight: bold;
+}
+
+.control-btn:hover {
+  background: #004d40;
+  color: white;
+}
+
+.department-tag {
+  font-size: 12px;
+  padding: 2px 8px;
+  background: #e0f2f1;
+  color: #004d40;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+.faculty-notice-container {
+  max-width: auto;
+  margin: 20px auto;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #004d40;
+  padding:10px;
+}
+
+.faculty-notice-header {
+  padding: 20px;
+  background: #004d40;
+  border-bottom: 1px solid #00695c;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  height: 70vh;
-  width: 100vw;
 }
 
-#students_faculty > .students {
-  margin: 2vw;
-  width: 40vw;
-  height: 90%;
-  border: solid black 2px;
+.faculty-notice-header h2 {
+  color: white;
+  font-size: 24px;
 }
 
-#students_faculty > .faculty {
-  margin: 2vw;
-  width: 40vw;
-  height: 90%;
-  border: solid black 2px;
+.faculty-all-notices-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.faculty-all-notices-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.faculty-notice-board {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.faculty-notice-wrapper {
+  position: absolute;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.faculty-notice-item {
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  background: white;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.faculty-notice-item:hover {
+  background: #e8f5e9;
+}
+
+.faculty-notice-title {
+  font-size: 16px;
+  color: #00695c;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.faculty-new-badge {
+  background: #004d40;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.faculty-notice-date {
+  color: #616161;
+  font-size: 14px;
+}
+
+.faculty-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background: #e8f5e9;
+}
+
+.faculty-control-btn {
+  padding: 8px 20px;
+  border: 1px solid #004d40;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #004d40;
+  font-weight: bold;
+}
+
+.faculty-control-btn:hover {
+  background: #004d40;
+  color: white;
+}
+
+.faculty-department-tag {
+  font-size: 12px;
+  padding: 2px 8px;
+  background: #e0f2f1;
+  color: #004d40;
+  border-radius: 4px;
+  margin-left: auto;
+}
+.Notices-Box{
+display: flex;
+justify-content: space-between;
+align-items: flex-start; /* Align boxes at the top */
 }

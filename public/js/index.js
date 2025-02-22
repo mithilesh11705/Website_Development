@@ -131,10 +131,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "Prof Jew Das (CE) has been chosen for the esteemed Water Advanced Research and Innovation (WARI) Fellowship Program, sponsored by the Indo-US Science and Technology Forum (IUSSTF)",
     },
     {
-        title: "WARI Fellowship Program",
-        description:
-          "Prof Jew Das (CE) has been chosen for the esteemed Water Advanced Research and Innovation (WARI) Fellowship Program, sponsored by the Indo-US Science and Technology Forum (IUSSTF)",
-      },
+      title: "WARI Fellowship Program",
+      description:
+        "Prof Jew Das (CE) has been chosen for the esteemed Water Advanced Research and Innovation (WARI) Fellowship Program, sponsored by the Indo-US Science and Technology Forum (IUSSTF)",
+    },
   ];
 
   // Initialize Events Section
@@ -243,4 +243,234 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize both sections
   initializeEvents();
   initializeAwards();
+});
+
+//Student Notices
+const notices = [
+  {
+    title: "Summer Internship Programme 2025",
+    date: "18 Feb 2025",
+    link: "#",
+    isNew: true,
+  },
+  {
+    title: "Corrigendum to Notice for Admission to MBA 25-27",
+    date: "22 Jan 2025",
+    link: "#",
+    isNew: false,
+  },
+  {
+    title: "Advertisement for Admission to MBA 2025-27",
+    date: "02 Jan 2025",
+    link: "#",
+    isNew: false,
+  },
+  {
+    title: "Campus Placement Drive 2025",
+    date: "15 Jan 2025",
+    link: "#",
+    isNew: false,
+  },
+  {
+    title: "Annual Sports Meet Registration",
+    date: "10 Jan 2025",
+    link: "#",
+    isNew: false,
+  },
+];
+
+class NoticeBoard {
+  constructor() {
+    this.currentIndex = 0;
+    this.wrapper = document.getElementById("noticeWrapper");
+    this.pauseBtn = document.getElementById("pauseBtn");
+    this.resumeBtn = document.getElementById("resumeBtn");
+    this.isPaused = false;
+    this.interval = null;
+
+    this.init();
+  }
+
+  init() {
+    this.renderNotices();
+    this.startAnimation();
+    this.setupEventListeners();
+  }
+
+  renderNotices() {
+    this.wrapper.innerHTML = notices
+      .map(
+        (notice) => `
+          <a href="${notice.link}" class="notice-item">
+              <div class="notice-title">
+                  ${notice.title}
+                  ${notice.isNew ? '<span class="new-badge">NEW</span>' : ""}
+              </div>
+              <div class="notice-date">${notice.date}</div>
+          </a>
+      `
+      )
+      .join("");
+  }
+
+  moveNotices() {
+    this.currentIndex = (this.currentIndex + 1) % notices.length;
+    this.wrapper.style.transform = `translateY(-${this.currentIndex * 60}px)`;
+  }
+
+  startAnimation() {
+    this.interval = setInterval(() => this.moveNotices(), 3000);
+  }
+
+  setupEventListeners() {
+    this.pauseBtn.addEventListener("click", () => this.pauseAnimation());
+    this.resumeBtn.addEventListener("click", () => this.resumeAnimation());
+
+    this.wrapper.addEventListener("mouseenter", () => this.pauseAnimation());
+    this.wrapper.addEventListener("mouseleave", () => {
+      if (!this.isPaused) {
+        this.resumeAnimation();
+      }
+    });
+  }
+
+  pauseAnimation() {
+    this.isPaused = true;
+    clearInterval(this.interval);
+  }
+
+  resumeAnimation() {
+    this.isPaused = false;
+    this.startAnimation();
+  }
+}
+
+// Initialize the notice board
+document.addEventListener("DOMContentLoaded", () => {
+  new NoticeBoard();
+});
+
+const facultyNotices = [
+  {
+    title: "Faculty Development Program on Advanced Teaching Methods",
+    date: "18 Feb 2025",
+    department: "All Departments",
+    link: "#",
+    isNew: true,
+  },
+  {
+    title: "Research Grant Proposals Due",
+    date: "22 Jan 2025",
+    department: "Research Cell",
+    link: "#",
+    isNew: false,
+  },
+  {
+    title: "Annual Faculty Performance Review Schedule",
+    date: "15 Jan 2025",
+    department: "HR Department",
+    link: "#",
+    isNew: false,
+  },
+  {
+    title: "Department Heads Meeting",
+    date: "12 Jan 2025",
+    department: "Administration",
+    link: "#",
+    isNew: false,
+  },
+  {
+    title: "Workshop on Innovative Teaching Technologies",
+    date: "10 Jan 2025",
+    department: "IT Department",
+    link: "#",
+    isNew: false,
+  },
+];
+
+class FacultyNoticeBoard {
+  constructor() {
+    this.currentFacultyIndex = 0;
+    this.facultyWrapper = document.getElementById("facultyNoticeWrapper");
+    this.facultyPauseBtn = document.getElementById("facultyPauseBtn");
+    this.facultyResumeBtn = document.getElementById("facultyResumeBtn");
+    this.isFacultyPaused = false;
+    this.facultyInterval = null;
+
+    this.initFacultyBoard();
+  }
+
+  initFacultyBoard() {
+    this.renderFacultyNotices();
+    this.startFacultyAnimation();
+    this.setupFacultyEventListeners();
+  }
+
+  renderFacultyNotices() {
+    this.facultyWrapper.innerHTML = facultyNotices
+      .map(
+        (notice) => `
+          <a href="${notice.link}" class="faculty-notice-item">
+              <div class="faculty-notice-title">
+                  ${notice.title}
+                  ${
+                    notice.isNew
+                      ? '<span class="faculty-new-badge">NEW</span>'
+                      : ""
+                  }
+                  <span class="faculty-department-tag">${
+                    notice.department
+                  }</span>
+              </div>
+              <div class="faculty-notice-date">${notice.date}</div>
+          </a>
+      `
+      )
+      .join("");
+  }
+
+  moveFacultyNotices() {
+    this.currentFacultyIndex =
+      (this.currentFacultyIndex + 1) % facultyNotices.length;
+    this.facultyWrapper.style.transform = `translateY(-${
+      this.currentFacultyIndex * 60
+    }px)`;
+  }
+
+  startFacultyAnimation() {
+    this.facultyInterval = setInterval(() => this.moveFacultyNotices(), 3000);
+  }
+
+  setupFacultyEventListeners() {
+    this.facultyPauseBtn.addEventListener("click", () =>
+      this.pauseFacultyAnimation()
+    );
+    this.facultyResumeBtn.addEventListener("click", () =>
+      this.resumeFacultyAnimation()
+    );
+
+    this.facultyWrapper.addEventListener("mouseenter", () =>
+      this.pauseFacultyAnimation()
+    );
+    this.facultyWrapper.addEventListener("mouseleave", () => {
+      if (!this.isFacultyPaused) {
+        this.resumeFacultyAnimation();
+      }
+    });
+  }
+
+  pauseFacultyAnimation() {
+    this.isFacultyPaused = true;
+    clearInterval(this.facultyInterval);
+  }
+
+  resumeFacultyAnimation() {
+    this.isFacultyPaused = false;
+    this.startFacultyAnimation();
+  }
+}
+
+// Initialize the faculty notice board
+document.addEventListener("DOMContentLoaded", () => {
+  new FacultyNoticeBoard();
 });

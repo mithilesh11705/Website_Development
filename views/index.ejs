@@ -195,16 +195,38 @@
       </div>
     </div>
 
-    <div id="students_faculty">
-      <div class="students">
+
+
+
+
+
+<div class="Notice-Box">
+    <div class="faculty-notice-container">
+      <div class="faculty-notice-header">
+          <h2>Faculty Notices</h2>
+          <a href="#" class="faculty-all-notices-link">All Notices</a>
+      </div>
+      <div class="faculty-notice-board">
+          <div class="faculty-notice-wrapper" id="facultyNoticeWrapper">
+              <!-- Notices will be inserted here by JavaScript -->
+          </div>
+      </div>
+  </div>
+
+
+
+  <div class="notice-container">
+    <div class="notice-header">
         <h2>Student Notices</h2>
-        <hr />
-      </div>
-      <div class="faculty">
-        <h2>Faculty Notices</h2>
-        <hr />
-      </div>
+        <a href="#" class="all-notices-link">All Notices</a>
     </div>
+    <div class="notice-board">
+        <div class="notice-wrapper" id="noticeWrapper">
+            <!-- Notices will be inserted here by JavaScript -->
+        </div>
+    </div>
+</div>
+</div>
 
     <%- include('./partials/footer') %>
     <script src="/js/index.js" defer></script>
